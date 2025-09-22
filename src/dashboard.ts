@@ -1,4 +1,4 @@
-22import SoftUI from 'dbd-soft-ui';
+import SoftUI from 'dbd-soft-ui';
 import { BaseClient, config } from '@projectdiscord/core';
 import DBD from 'discord-dashboard';
 import KeyvMysql from '@keyv/mysql';
