@@ -23,7 +23,6 @@ const Handler = new DBD.Handler({ store: new KeyvMysql(process.env.DATABASE_URL)
 		useTheme: true,
 		bot: client,
 		useTheme404: true,
-		storage: Handler, // ✅ Move it here
 		theme: SoftUI({
 			customThemeOptions: {
 				index: async ({ req, res, config }) => {
@@ -150,7 +149,8 @@ const Handler = new DBD.Handler({ store: new KeyvMysql(process.env.DATABASE_URL)
 					text: '',
 					link: '',
 				},
-			},
+			},	
+			storage: Handler, // ✅ Move it here
 		}),
 		settings: []
 	});
