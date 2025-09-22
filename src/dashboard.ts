@@ -52,12 +52,12 @@ const Handler = new DBD.Handler({ store: new KeyvMysql(process.env.DATABASE_URL)
 			colorScheme: config.dashboard?.colorScheme!,
 			supporteMail: config.dashboard?.supportMail!,
 			icons: {
-				favicon: 'https://assistantscenter.com/wp-content/uploads/2021/11/cropped-cropped-logov6.png',
+				favicon: 'https://github.com/ProjectDiscord.png',
 				noGuildIcon: 'https://pnggrid.com/wp-content/uploads/2021/05/Discord-Logo-Circle-1024x1024.png',
 				sidebar: {
-					darkUrl: 'https://assistantscenter.com/img/logo.png',
-					lightUrl: 'https://assistanscenter.com/img/logo.png',
-					hideName: true,
+					darkUrl: 'https://github.com/ProjectDiscord.png',
+					lightUrl: 'https://github.com/ProjectDiscord.png',
+					hideName: false,
 					borderRadius: false,
 					alignCenter: true,
 				},
@@ -149,10 +149,11 @@ const Handler = new DBD.Handler({ store: new KeyvMysql(process.env.DATABASE_URL)
 					text: '',
 					link: '',
 				},
-			},	
+			},
+			// @ts-expect-error
 			storage: Handler, // ✅ Move it here
 		}),
-		settings: []
+		settings: [],
 	});
 
 	Dashboard.init();
