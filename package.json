@@ -23,6 +23,7 @@
 		"typescript": "^5.9.2"
 	},
 	"dependencies": {
+		"@dbd-soft-ui/logs": "^1.1.2",
 		"@keyv/mysql": "^2.1.6",
 		"dbd-soft-ui": "^1.7.40-beta.1",
 		"discord-dashboard": "^2.3.62",
