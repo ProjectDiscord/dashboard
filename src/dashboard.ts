@@ -1,4 +1,4 @@
-import SoftUI from 'dbd-soft-ui';
+22import SoftUI from 'dbd-soft-ui';
 import { BaseClient, config } from '@projectdiscord/core';
 import DBD from 'discord-dashboard';
 import KeyvMysql from '@keyv/mysql';
@@ -23,6 +23,7 @@ const Handler = new DBD.Handler({ store: new KeyvMysql(process.env.DATABASE_URL)
 		useTheme: true,
 		bot: client,
 		useTheme404: true,
+		storage: Handler, // ✅ Move it here
 		theme: SoftUI({
 			customThemeOptions: {
 				index: async ({ req, res, config }) => {
@@ -151,8 +152,7 @@ const Handler = new DBD.Handler({ store: new KeyvMysql(process.env.DATABASE_URL)
 				},
 			},
 		}),
-		settings: [],
-		storage: Handler, // ✅ Move it here
+		settings: []
 	});
 
 	Dashboard.init();
