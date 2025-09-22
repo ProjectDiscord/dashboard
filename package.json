@@ -23,6 +23,9 @@
 		"typescript": "^5.9.2"
 	},
 	"dependencies": {
+		"@keyv/mysql": "^2.1.6",
+		"dbd-soft-ui": "^1.7.40-beta.1",
+		"discord-dashboard": "^2.3.62",
 		"discord.js": "^14.22.1",
 		"dotenv": "^17.2.2"
 	},
