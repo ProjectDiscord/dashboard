@@ -55,7 +55,7 @@ client.on('ready', () => {
 		},
 		requiredPermissions: Object.values(DBD.DISCORD_FLAGS.Permissions), // full perms
 		supportServer: {
-			slash: config.dashboard?.supportSlashCommand || '/support',
+			slash: config.dashboard?.supportSlashUrl || '/support',
 			inviteUrl: config.dashboard?.supportServerUrl || '',
 		},
 		underMaintenanceAccessKey: config.dashboard?.underMaintenanceAccessKey,
